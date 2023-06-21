@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Device Info </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Device Info</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list *ngIf="deviceInfo">
+    <ion-item *ngFor="let key of deviceInfoKeys">
+      <ion-label>{{ key }}</ion-label>
+      <span>{{ deviceInfo[key] }}</span>
+    </ion-item>
+  </ion-list>
+</ion-content>

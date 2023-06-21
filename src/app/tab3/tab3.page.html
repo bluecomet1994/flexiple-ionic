@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Image Gallery </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Image Gallery</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ng-container *ngIf="hasReadPermission; else noPermission">
+    <ion-button (click)="getPictures()">Get Pictures</ion-button>
+    <div>
+      <ion-img *ngFor="let image of images" [src]="image"></ion-img>
+    </div>
+  </ng-container>
+  <div *ngIf="error">{{ error }}</div>
+</ion-content>
+<ng-template #noPermission>
+  <div>No Permission to get pictures</div>
+</ng-template>

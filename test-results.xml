@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 114.0.5735.110 (Windows 10)" package="" timestamp="2023-06-09T16:29:51" id="0" hostname="DESKTOP-QLV6VML" tests="11" errors="0" failures="9" time="0.312">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/114.0.5735.110 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.021" classname="AppComponent"/>
+  <testcase name="Tab2Page should show error if precise location permission denied for prompt" time="0.041" classname="Tab2Page">
+    <failure type="">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at src/app/tab2/tab2.page.spec.ts:56:45
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (node_modules/.pnpm/tslib@2.2.0/node_modules/tslib/tslib.es6.js:73:43)
+</failure>
+  </testcase>
+  <testcase name="Tab2Page should show error if precise location permission denied for denied" time="0.036" classname="Tab2Page">
+    <failure type="">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at src/app/tab2/tab2.page.spec.ts:56:45
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (node_modules/.pnpm/tslib@2.2.0/node_modules/tslib/tslib.es6.js:73:43)
+</failure>
+  </testcase>
+  <testcase name="Tab2Page should show error if precise location permission denied for prompt-with-rationale" time="0.036" classname="Tab2Page">
+    <failure type="">Error: Expected false to be truthy.
+    at &lt;Jasmine&gt;
+    at src/app/tab2/tab2.page.spec.ts:56:45
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (node_modules/.pnpm/tslib@2.2.0/node_modules/tslib/tslib.es6.js:73:43)
+</failure>
+  </testcase>
+  <testcase name="Tab2Page should show position" time="0.054" classname="Tab2Page">
+    <failure type="">TypeError: geolocationWatchCallback is not a function
+    at src/app/tab2/tab2.page.spec.ts:84:5
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (node_modules/.pnpm/tslib@2.2.0/node_modules/tslib/tslib.es6.js:73:43)
+    at ZoneDelegate.invoke (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:400:1)
+    at ProxyZoneSpec.onInvoke (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone-testing.js:301:43)
+    at ZoneDelegate.invoke (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:399:1)
+    at Zone.run (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:160:1)
+    at node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:1318:1
+    at ZoneDelegate.invokeTask (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:434:1)
+    at ProxyZoneSpec.onInvokeTask (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone-testing.js:332:43)
+</failure>
+  </testcase>
+  <testcase name="Tab2Page should start watching if precise location permission is granted" time="0.04" classname="Tab2Page">
+    <failure type="">Error: Expected spy watchPosition to have been called.
+    at &lt;Jasmine&gt;
+    at src/app/tab2/tab2.page.spec.ts:71:42
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (node_modules/.pnpm/tslib@2.2.0/node_modules/tslib/tslib.es6.js:73:43)
+</failure>
+  </testcase>
+  <testcase name="Tab1Page should get device info after page did view" time="0.039" classname="Tab1Page">
+    <failure type="">Error: Expected spy getInfo to have been called.
+    at &lt;Jasmine&gt;
+    at src/app/tab1/tab1.page.spec.ts:34:31
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (node_modules/.pnpm/tslib@2.2.0/node_modules/tslib/tslib.es6.js:73:43)
+</failure>
+  </testcase>
+  <testcase name="TabsPage should create" time="0.006" classname="TabsPage"/>
+  <testcase name="Tab3Page should not get pictures autmatically after permision request" time="0.017" classname="Tab3Page">
+    <failure type="">Failed: R3InjectorError(DynamicTestModule)[ImagePicker -&gt; ImagePicker]: 
+  NullInjectorError: No provider for ImagePicker!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ImagePicker', 'ImagePicker' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[ImagePicker -&gt; ImagePicker]: 
+  NullInjectorError: No provider for ImagePicker!
+    at NullInjector.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at NgModuleRef.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:21828:1)
+    at Object.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:21505:1)
+    at lookupTokenUsingModuleInjector (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:3358:1)
+    at getOrCreateInjectable (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:3470:1)
+    at ɵɵdirectiveInject (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:14396:1)
+    at NodeInjectorFactory.Tab3Page_Factory [as factory] (ng:///Tab3Page/ɵfac.js:4:36)
+    at getNodeInjectable (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:3565:1)
+</failure>
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'hasReadPermission')
+    at src/app/tab3/tab3.page.spec.ts:39:20
+    at Generator.next (&lt;anonymous&gt;)
+    at node_modules/.pnpm/tslib@2.2.0/node_modules/tslib/tslib.es6.js:76:1
+    at new ZoneAwarePromise (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:1340:1)
+    at __awaiter (node_modules/.pnpm/tslib@2.2.0/node_modules/tslib/tslib.es6.js:72:1)
+    at UserContext.&lt;anonymous&gt; (src/app/tab3/tab3.page.spec.ts:38:82)
+    at ZoneDelegate.invoke (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:400:1)
+    at ProxyZoneSpec.onInvoke (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone-testing.js:301:43)
+    at ZoneDelegate.invoke (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:399:1)
+    at Zone.run (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:160:1)
+</failure>
+  </testcase>
+  <testcase name="Tab3Page should get picture if read permission provided" time="0.015" classname="Tab3Page">
+    <failure type="">Failed: R3InjectorError(DynamicTestModule)[ImagePicker -&gt; ImagePicker]: 
+  NullInjectorError: No provider for ImagePicker!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ImagePicker', 'ImagePicker' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[ImagePicker -&gt; ImagePicker]: 
+  NullInjectorError: No provider for ImagePicker!
+    at NullInjector.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at NgModuleRef.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:21828:1)
+    at Object.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:21505:1)
+    at lookupTokenUsingModuleInjector (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:3358:1)
+    at getOrCreateInjectable (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:3470:1)
+    at ɵɵdirectiveInject (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:14396:1)
+    at NodeInjectorFactory.Tab3Page_Factory [as factory] (ng:///Tab3Page/ɵfac.js:4:36)
+    at getNodeInjectable (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:3565:1)
+</failure>
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'hasReadPermission')
+    at src/app/tab3/tab3.page.spec.ts:29:20
+    at Generator.next (&lt;anonymous&gt;)
+    at node_modules/.pnpm/tslib@2.2.0/node_modules/tslib/tslib.es6.js:76:1
+    at new ZoneAwarePromise (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:1340:1)
+    at __awaiter (node_modules/.pnpm/tslib@2.2.0/node_modules/tslib/tslib.es6.js:72:1)
+    at UserContext.&lt;anonymous&gt; (src/app/tab3/tab3.page.spec.ts:28:68)
+    at ZoneDelegate.invoke (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:400:1)
+    at ProxyZoneSpec.onInvoke (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone-testing.js:301:43)
+    at ZoneDelegate.invoke (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:399:1)
+    at Zone.run (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:160:1)
+</failure>
+  </testcase>
+  <testcase name="Tab3Page should create" time="0.007" classname="Tab3Page">
+    <failure type="">Failed: R3InjectorError(DynamicTestModule)[ImagePicker -&gt; ImagePicker]: 
+  NullInjectorError: No provider for ImagePicker!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ImagePicker', 'ImagePicker' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[ImagePicker -&gt; ImagePicker]: 
+  NullInjectorError: No provider for ImagePicker!
+    at NullInjector.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at NgModuleRef.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:21828:1)
+    at Object.get (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:21505:1)
+    at lookupTokenUsingModuleInjector (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:3358:1)
+    at getOrCreateInjectable (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:3470:1)
+    at ɵɵdirectiveInject (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:14396:1)
+    at NodeInjectorFactory.Tab3Page_Factory [as factory] (ng:///Tab3Page/ɵfac.js:4:36)
+    at getNodeInjectable (node_modules/.pnpm/@angular+core@13.2.2_rxjs@6.6.0_zone.js@0.11.4/node_modules/@angular/core/fesm2015/core.mjs:3565:1)
+</failure>
+    <failure type="">Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/tab3/tab3.page.spec.ts:25:23)
+    at ZoneDelegate.invoke (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone.js:400:1)
+    at ProxyZoneSpec.onInvoke (node_modules/.pnpm/zone.js@0.11.4/node_modules/zone.js/dist/zone-testing.js:301:43)
+</failure>
+  </testcase>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Location Position </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Location Position</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div *ngIf="showPermissionError">No Permission to watch position</div>
+  <div *ngIf="positionError">{{ positionError }}</div>
+  <div *ngIf="position">
+    <div>
+      <span>Latitude: </span>
+      <span>{{ position.coords.latitude }}</span>
+    </div>
+    <div>
+      <span>Longitude: </span>
+      <span>{{ position.coords.longitude }}</span>
+    </div>
+    <div>
+      <span>Altitude: </span>
+      <span>{{ position.coords.altitude }}</span>
+    </div>
+  </div>
+</ion-content>

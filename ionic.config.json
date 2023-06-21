@@ -1,0 +1,7 @@
+{
+  "name": "DevSkiller",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
